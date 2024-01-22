@@ -36,13 +36,13 @@
         <i id="prev-button" class="bi bi-arrow-left-circle-fill" role="button"></i>
   
         <!-- Gallery -->
-        <div v-for="destination in destinations" class="gallery">
-          <figure class="active">
+        <div class="gallery">
+          <figure v-for="(destination,i) in destinations" :class="{active: i=== currentIndex }">
             <figcaption>
               <h2>{{destination.name}}</h2>
               <h3>{{destination.description}}</h3>
             </figcaption>
-            <img :src="`img/${destination.image}`" alt="Svezia">
+            <img :src="`img/${destination.image}`" alt={{destination.name}}>
           </figure>
         </div>
   
