@@ -2,9 +2,12 @@ const {createApp} = Vue;
 const app = createApp({
     data(){
        return{
-        destinations
+        destinations,
+        currentIndex : 0,
        }
     }
 })
 app.mount('#root')
+
+
 
