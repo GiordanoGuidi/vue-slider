@@ -1,22 +1,22 @@
 // # FUNZIONI
 
 // Funzione per creare le immagini
-// const createImages = destination => {
-//   const { name, description, image } = destination;
+const createImages = destination => {
+  const { name, description, image } = destination;
 
-//   const img = `<img src="img/${image}" alt="${name}" />`;
-//   images += img;
+  const img = `<img src="img/${image}" alt="${name}" />`;
+  images += img;
 
-//   galleryElements += `
-//   <figure>
-//     <figcaption>
-//       <h2>${name}</h2>
-//       <h3>${description}</h3>
-//     </figcaption>
-//     ${img}
-//   </figure>
-//   `;
-// }
+  galleryElements += `
+  <figure>
+    <figcaption>
+      <h2>${name}</h2>
+      <h3>${description}</h3>
+    </figcaption>
+    ${img}
+  </figure>
+  `;
+}
 
 // Funzione per cambiare immagine
 const changeActivePic = target => {

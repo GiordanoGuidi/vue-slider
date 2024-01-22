@@ -29,7 +29,6 @@
 </head>
 
 <body>
-
   <div class="container">
     <div id="root">
       <div id="carousel">
@@ -53,7 +52,7 @@
   
       <!-- Thumbnails -->
       <div id="thumbnails">
-        <img v-for="destination in destinations" :src='img/{{destination.image}}' :alt= {{destination.name}} class="active">
+        <img v-for="destination in destinations" :src="`img/${destination.image}`" alt= {{destination.name}}>
       </div>
   
       <!-- <div class="autoplay-controls">
