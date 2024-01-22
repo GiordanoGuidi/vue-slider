@@ -27,6 +27,7 @@
 	position: relative;
 	display: none;
 }
+
 .gallery figure.active {
 	display: block;
 }
