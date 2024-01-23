@@ -39,9 +39,7 @@ const app = createApp({
     },
         //FUNZIONE CHE ATTIVA L'AUTOPLAY ALL'APERTURA DELLA PAGINA
     mounted(){
-        this.interval = setInterval(()=>{
-            this.goNextIndex()
-        },3000)
+        this.startAutoPlay();
     }
 })
 app.mount('#root')
